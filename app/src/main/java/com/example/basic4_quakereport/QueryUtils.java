@@ -67,7 +67,12 @@ public final class QueryUtils {
                 // Extract the value for the key called "time"
                 long time = properties.getLong("time");
 
-                Earthquake earthquake = new Earthquake(magnitude,location,time);
+                // Extract the value for the key called "url"
+                String url = properties.getString("url");
+
+                // Create a new {@link Earthquake} object with the magnitude, location, time,
+                // and url from the JSON response.
+                Earthquake earthquake = new Earthquake(magnitude, location, time, url);
                 earthquakes.add(earthquake);
 
             }
@@ -78,6 +83,9 @@ public final class QueryUtils {
             // with the message from the exception.
             Log.e("QueryUtils", "Problem parsing the earthquake JSON results", e);
         }
+
+
+
 
         // Return the list of earthquakes
         return earthquakes;

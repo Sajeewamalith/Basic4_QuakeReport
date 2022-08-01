@@ -27,12 +27,25 @@ public class Earthquake {
      *  earthquake happened
      */
 
+    /** Website URL of the earthquake */
+    private String mUrl;
 
-    public Earthquake(double magnitude, String location, long timeInMilliseconds)
+
+
+    public Earthquake(double magnitude, String location, long timeInMilliseconds, String url)
     {
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMilliseconds = timeInMilliseconds;
+        mUrl = url;
+    }
+
+
+    /**
+     * Returns the website URL to find more information about the earthquake.
+     */
+    public String getUrl() {
+        return mUrl;
     }
 
 
