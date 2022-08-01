@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sajee/AndroidStudioProjects/Basic4_QuakeReport/app/src/main/res/drawable/magnitude_circle.xml" value="0.158" />
         <entry key="..\:/Users/sajee/AndroidStudioProjects/Basic4_QuakeReport/app/src/main/res/layout/earthquake_activity.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/sajee/AndroidStudioProjects/Basic4_QuakeReport/app/src/main/res/layout/earthquake_list_item.xml" value="0.22" />
       </map>
