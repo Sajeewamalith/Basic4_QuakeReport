@@ -40,7 +40,6 @@ public final class QueryUtils {
     public static ArrayList<Earthquake> extractEarthquakes() {
 
 
-
         // Create an empty ArrayList that we can start adding earthquakes to
         ArrayList<Earthquake> earthquakes = new ArrayList<>();
 
@@ -59,7 +58,10 @@ public final class QueryUtils {
                 JSONObject currentEarthquake = earthquakeArray.getJSONObject(i);
                 JSONObject properties = currentEarthquake.getJSONObject("properties");
 
-                String magnitude = properties.getString("mag");
+
+                // Extract the value for the key called "mag"
+                double magnitude = properties.getDouble("mag");
+
                 String location = properties.getString("place");
 
                 // Extract the value for the key called "time"

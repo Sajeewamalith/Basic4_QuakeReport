@@ -7,10 +7,14 @@ package com.example.basic4_quakereport;
  */
 public class Earthquake {
 
+    /** Magnitude of the earthquake */
+    private double mMagnitude;
+
+
     /** Time of the earthquake */
     private long mTimeInMilliseconds;
 
-    private String mMagnitude;
+   // private String mMagnitude;
     private String mLocation;
     private String mDate;
 
@@ -24,7 +28,7 @@ public class Earthquake {
      */
 
 
-    public Earthquake(String magnitude, String location, long timeInMilliseconds)
+    public Earthquake(double magnitude, String location, long timeInMilliseconds)
     {
         mMagnitude = magnitude;
         mLocation = location;
@@ -33,7 +37,7 @@ public class Earthquake {
 
 
 
-    public String getMagnitude() {
+    public double getMagnitude() {
         return  mMagnitude;
     }
 
