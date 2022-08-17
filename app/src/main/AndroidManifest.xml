@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.basic4_quakereport">
 
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
 
